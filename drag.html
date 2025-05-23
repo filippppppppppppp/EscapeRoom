@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop Quiz</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Trascina i codici esadecimali nelle caselle in basso ordinandoli in modo numerico.</h2>
+        <h4>Le caselle rosse indicano inizio e fine sequenza, le violette sono caratteri di escape.
+            Puoi scambiare i blocchi trascinandoli uno sopra l’altro.
+            Clicca su "Verifica Risposta" per controllare la risposta.</h4>
+        <div class="group">
+            <div class="row">
+                <!-- DATI -->
+                <div class="box">
+                    <div class="dragtarget" id="drag1" draggable="true">
+                        <p>01h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag2" draggable="true">
+                        <p>02h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag3" draggable="true">
+                        <p>03h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag4" draggable="true">
+                        <p>04h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag5" draggable="true">
+                        <p>05h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag6" draggable="true">
+                        <p>06h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag7" draggable="true">
+                        <p>07h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag8" draggable="true">
+                        <p>08h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag9" draggable="true">
+                        <p>09h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget" id="drag10" draggable="true">
+                        <p>0Ah</p>
+                    </div>
+                </div>
+            </div>
+            <p>DATI</p>
+        </div>
+
+        <div class="group">
+            <div class="row">
+                <!-- DELIMITATORI -->
+                <div class="box">
+                    <div class="dragtarget del" id="drag11" draggable="true">
+                        <p>06h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget del" id="drag12" draggable="true">
+                        <p>06h</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget es" id="drag13" draggable="true">
+                        <p>0Ah </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="dragtarget es" id="drag14" draggable="true">
+                        <p>0Ah </p>
+                    </div>
+                </div>
+            </div>
+            <p>DELIMITATORI E ESCAPE</p>
+        </div>
+
+        <div class="row">
+            <!-- ZONE DI DESTINAZIONE -->
+            <div class="dropzone" id="zn1"></div>
+            <div class="dropzone" id="zn2"></div>
+            <div class="dropzone" id="zn3"></div>
+            <div class="dropzone" id="zn4"></div>
+            <div class="dropzone" id="zn5"></div>
+            <div class="dropzone" id="zn6"></div>
+            <div class="dropzone" id="zn7"></div>
+            <div class="dropzone" id="zn8"></div>
+            <div class="dropzone" id="zn9"></div>
+            <div class="dropzone" id="zn10"></div>
+            <div class="dropzone" id="zn11"></div>
+            <div class="dropzone" id="zn12"></div>
+            <div class="dropzone" id="zn13"></div>
+            <div class="dropzone" id="zn14"></div>
+        </div>
+
+        <button id="vis">Verifica Risposta</button>
+        <button id="hint">Richiedi Indizio</button>
+        <div id="feedback"></div>
+        <div id="hints">Indizi rimanenti: <span id="hintCount"></span></div>
+        <a href="index.html"><button>Torna alla home</button></a>
+        <div id="timer">00:00</div>
+    </div>
+</body>
+
+</html>

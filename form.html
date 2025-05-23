@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigmi Reti - Livello Datalink</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div id="contenitore-quiz">
+        <h1>Enigmi Reti - Livello Datalink</h1>
+
+        <!-- Esempio per la domanda 1 -->
+        <div class="domanda-container" id="domanda1">
+            <p>1. Sono un identificatore unico per ogni dispositivo in una rete locale. Non sono un indirizzo IP, ma
+                sono un numero che troverai sulla scheda di rete. Chi sono?</p>
+            <ul>
+                <li><input type="radio" name="d1" value="B"> Indirizzo MAC</li>
+                <li><input type="radio" name="d1" value="A"> Indirizzo IP</li>
+                <li><input type="radio" name="d1" value="C"> Porta di rete</li>
+            </ul>
+        </div>
+
+        <!-- Domanda 2 -->
+        <div class="domanda-container" id="domanda2">
+            <p>2. Sono una "scatola" che contiene dati. Vengo utilizzato per inviare informazioni tra dispositivi sulla
+                rete. Cosa sono?</p>
+            <ul>
+                <li><input type="radio" name="d2" value="B"> Frame</li>
+                <li><input type="radio" name="d2" value="C"> Relay</li>
+                <li><input type="radio" name="d2" value="A"> Pacchetto</li>
+            </ul>
+        </div>
+
+        <!-- Domanda 3 -->
+        <div class="domanda-container" id="domanda3">
+            <p>3. Quando una rete è occupata, aspetto il mio turno per inviare dati. Non invio tutto insieme, ma
+                gestisco la comunicazione in modo ordinato. Chi sono?</p>
+            <ul>
+                <li><input type="radio" name="d3" value="C"> ARP</li>
+                <li><input type="radio" name="d3" value="A"> Controllo degli errori</li>
+                <li><input type="radio" name="d3" value="B"> Controllo di flusso</li>
+            </ul>
+        </div>
+
+        <!-- Domanda 4 -->
+        <div class="domanda-container" id="domanda4">
+            <p>4. Mi troverai nel livello datalink, e mi occupo di verificare che i dati non siano danneggiati durante
+                il trasferimento. Se qualcosa va storto, posso chiedere di ritrasmettere i dati. Cosa faccio?</p>
+            <ul>
+                <li><input type="radio" name="d4" value="C"> Commutazione di circuito</li>
+                <li><input type="radio" name="d4" value="B"> Trasmissione unidirezionale</li>
+                <li><input type="radio" name="d4" value="A"> Controllo degli errori</li>
+            </ul>
+        </div>
+
+        <!-- Domanda 5 -->
+        <div class="domanda-container" id="domanda5">
+            <p>5. Quando voglio inviare dati sulla rete, prima devo formattare un messaggio in un formato che comprenda
+                sia i dati che informazioni di controllo. Questo formato si chiama…</p>
+            <ul>
+                <li><input type="radio" name="d5" value="C"> Bit</li>
+                <li><input type="radio" name="d5" value="A"> Frame</li>
+                <li><input type="radio" name="d5" value="B"> Pacchetto</li>
+            </ul>
+        </div>
+
+
+        <div class="contenitore-bottone">
+            <button id="invia-risposte">Verifica Risposte</button>
+            <button id="aiuto">Chiedi Aiuto</button>
+        </div>
+
+        <div id="hints">Indizi rimanenti: <span id="hintCount"></span></div>
+        <div id="messaggio-aiuto">
+            <p id="testo-aiuto"></p>
+        </div>
+
+        <div id="risultato"></div>
+
+        <a href="index.html"><button id="torna">Torna alla home</button></a>
+        <div id="timer">00:00</div>
+    </div>
+</body>
+
+</html>

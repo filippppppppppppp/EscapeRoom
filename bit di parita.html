@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controllo Parità Bit</title>
+  <link rel="stylesheet" href="css/style1.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="contenitore">
+    <h1>Controllo Parità dei Bit</h1>
+    <h2>Seleziona il tipo di parità corretta per ogni stringa di bit</h2>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">1101011010110110</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">1011101111001101</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">1110001001010000</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">1010101010101011</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">111100001111000011110000</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">100111000111001101011011</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">011111111000000011111111</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <div class="domanda" data-risposta="">
+      <p class="stringa-bit">110011001100110000111100</p>
+      <div class="opzioni">
+        <div class="opzione" data-valore="0">Parità Pari</div>
+        <div class="opzione" data-valore="1">Parità Dispari</div>
+      </div>
+    </div>
+
+    <button id="verifica">Verifica tutte le risposte</button>
+    <div id="risultato"></div>
+
+    <button id="mostra-indizio">Chiedi Indizi</button>
+    <div id="hints">Indizi rimanenti: <span id="hintCount"></span></div>
+    <div id="area-indizi"></div>
+
+    <a href="index.html"><button id="torna">Torna alla home</button></a>
+    <div id="timer">00:00</div>
+  </div>
+</body>
+
+</html>

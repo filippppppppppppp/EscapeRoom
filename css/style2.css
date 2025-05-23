@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #c2f0c2;
+    background-image: linear-gradient(to bottom, #a7d08c 0%, #e0d8b0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    user-select: none;
+}
+#timer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.container {
+    background-color: #fff6d6;
+    padding: 25px;
+    border-radius: 8px;
+    border: 4px solid #7c5c3b;
+    box-shadow: 6px 6px 0px #5a3d1c;
+    width: 95%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.box,
+.dropzone {
+    border: 2px solid #4b3a26;
+    width: 72px;
+    height: 72px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    margin: 5px;
+    background-color: #f3e9c5;
+    color: #4b3a26;
+}
+
+.dragtarget {
+    background-color: #e0d0a8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    color: #1b1b1b;
+    padding: 4px;
+    text-align: center;
+}
+
+.del {
+    background-color: #dcb5a4;
+}
+
+.es {
+    background-color: #c6bae6;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 12px 0;
+    gap: 8px;
+}
+
+.group {
+    margin: 16px auto;
+    padding: 12px;
+    border: 2px dashed #bfa372;
+    background-color: #fff5e1;
+    border-radius: 6px;
+    width: 95%;
+}
+
+button {
+    padding: 12px 16px;
+    font-size: 0.8rem;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #4b3a26;
+    background-color: #9fd776;
+    color: #1b1b1b;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #74b04e;
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 0.7rem;
+    margin: 4px 0;
+    color: #4b3a26;
+}
+
+#feedback {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+#hints {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #1b1b1b;;
+}
